@@ -67,7 +67,7 @@ public class GetUsersQueryBuilder {
         return get(userParser);
     }
 
-    private <R extends BasicUser> List<R> get(XmlParser<R> mapper){
+    public <R extends BasicUser> List<R> get(XmlParser<R> mapper){
         try {
             Element root = client.getUsers(params).getRootElement();
             return Parsers.forEach(root, "user", mapper);
@@ -76,5 +76,4 @@ public class GetUsersQueryBuilder {
             throw e;
         }
     }
-
 }

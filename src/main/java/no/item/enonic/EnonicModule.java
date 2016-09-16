@@ -21,6 +21,7 @@ public class EnonicModule extends PrivateModule {
         // Enonic client
         bind(EnonicCredentials.class).toInstance(credentials);
         bind(Client.class).toProvider(EnonicClientProvider.class);
+        expose(Client.class);
 
         // Dom outputter
         bind(DOMOutputter.class).toInstance(new DOMOutputter());
