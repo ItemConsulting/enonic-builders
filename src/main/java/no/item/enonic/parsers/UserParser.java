@@ -12,7 +12,7 @@ public class UserParser implements XmlParser<User> {
     @Override
     public User apply(Element root) {
         User user = new User();
-        user.id = root.getAttributeValue("key");
+        user.key = root.getAttributeValue("key");
         user.firstName = root.getChildText("first-name");
         user.lastName = root.getChildText("last-name");
         user.email = root.getChildText("email");

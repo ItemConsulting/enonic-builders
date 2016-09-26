@@ -28,7 +28,7 @@ public class LeaveGroupsQueryBuilder {
         this.leaversName = String.format("BasicUser [%s %s]", user.firstName, user.lastName);
         this.groupParser = new GroupParser();
         params = new LeaveGroupsParams();
-        params.user = user.id;
+        params.user = user.key;
         params.groupsToLeave = groupIds(groups);
     }
 

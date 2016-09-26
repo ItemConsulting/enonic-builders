@@ -36,7 +36,7 @@ public class UpdateUserQueryBuilder {
     public void execute(){
         try {
             client.updateUser(params);
-            logger.info("Updated user [{} {}] with id [{}]", user.firstName, user.lastName, user.id);
+            logger.info("Updated user [{} {}] with key [{}]", user.firstName, user.lastName, user.key);
         } catch(ClientException e){
             logger.error("Can't update user with email [{}]", user.email, e);
             throw e;

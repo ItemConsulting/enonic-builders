@@ -52,7 +52,7 @@ public class UserService {
         user.lastName = lastName;
         user.phoneMobile = phoneMobile;
         user.email = email;
-        user.id = String.valueOf(memberId);
+        user.key = String.valueOf(memberId);
         return update(user, userstore);
     }
 }

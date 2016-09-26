@@ -34,8 +34,8 @@ public class CreateUserQueryBuilder {
 
     public User execute(){
         try {
-            user.id = client.createUser(params);
-            logger.info("Created new user [{} {}] with id [{}]", user.firstName, user.lastName, user.id);
+            user.key = client.createUser(params);
+            logger.info("Created new user [{} {}] with key [{}]", user.firstName, user.lastName, user.key);
             return user;
         } catch(ClientException e){
             logger.error("Can't create user with email [{}]", user.email, e);

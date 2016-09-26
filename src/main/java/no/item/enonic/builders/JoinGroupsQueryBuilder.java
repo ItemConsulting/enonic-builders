@@ -24,7 +24,7 @@ public class JoinGroupsQueryBuilder {
         this.joinersName = String.format("BasicUser [%s %s]", user.firstName, user.lastName);
         this.groupParser = new GroupParser();
         params = new JoinGroupsParams();
-        params.user = "#" + user.id;
+        params.user = "#" + user.key;
         params.groupsToJoin = groupIds(groups);
     }
 

@@ -9,7 +9,7 @@ public class BasicUserParser implements XmlParser<BasicUser> {
     @Override
     public BasicUser apply(Element element) {
         BasicUser user = new BasicUser();
-        user.id = element.getAttributeValue("key");
+        user.key = element.getAttributeValue("key");
         user.firstName = element.getChildText("first-name");
         user.lastName = element.getChildText("last-name");
         user.email = element.getChildText("email");
