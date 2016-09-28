@@ -46,13 +46,13 @@ public class UserService {
         return DeleteUserQueryBuilder.of(client.get(), key);
     }
 
-    public UpdateUserQueryBuilder updateBasicData(String firstName, String lastName, String phoneMobile, String email, Integer memberId, String userstore){
+    public UpdateUserQueryBuilder updateBasicData(String firstName, String lastName, String phoneMobile, String email, String memberId, String userstore){
         User user = new User();
         user.firstName = firstName;
         user.lastName = lastName;
         user.phoneMobile = phoneMobile;
         user.email = email;
-        user.key = String.valueOf(memberId);
+        user.memberId = String.valueOf(memberId);
         return update(user, userstore);
     }
 }

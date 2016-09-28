@@ -16,12 +16,11 @@ public class UserParser implements XmlParser<User> {
         user.firstName = root.getChildText("first-name");
         user.lastName = root.getChildText("last-name");
         user.email = root.getChildText("email");
-        user.enonicUsername = root.getChildText("name");
-        user.username = root.getChildText("member-id");
+        user.enonicUserName = root.getChildText("name");
+        user.memberId = root.getChildText("member-id");
 
         try {
             Element address = root.getChild("addresses").getChild("address");
-
             user.address2 = address.getChildText("street");
             user.zipCode = address.getChildText("postal-code");
             user.city = address.getChildText("postal-address");

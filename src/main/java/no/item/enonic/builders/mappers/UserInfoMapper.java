@@ -17,7 +17,7 @@ public class UserInfoMapper implements Function<User, UserInfo> {
     @Override
     public UserInfo apply(User user) {
         UserInfo userInfo = new UserInfo();
-        userInfo.setMemberId(String.valueOf(user.key));
+        userInfo.setMemberId(user.memberId);
         userInfo.setFirstName(user.firstName);
         userInfo.setLastName(user.lastName);
         userInfo.setBirthday(oldDateFormat(user.birthday));

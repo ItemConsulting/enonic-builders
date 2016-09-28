@@ -7,6 +7,6 @@ public class BasicUser {
     public String email;
     public String firstName;
     public String lastName;
-    public String enonicUsername;
+    public String enonicUserName;
     public LocalDate lastModified;
 }

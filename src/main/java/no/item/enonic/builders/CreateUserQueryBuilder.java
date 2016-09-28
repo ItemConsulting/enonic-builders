@@ -24,7 +24,7 @@ public class CreateUserQueryBuilder {
         params.userstore = userstore;
         params.password = password;
         params.email = user.email.trim().toLowerCase();
-        params.username = this.user.enonicUsername = username(user.phoneMobile, user.phonePrivate, user.email);
+        params.username = this.user.enonicUserName = username(user.phoneMobile, user.phonePrivate, user.email);
         params.userInfo = new UserInfoMapper().apply(user);
     }
 

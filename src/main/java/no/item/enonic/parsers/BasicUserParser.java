@@ -13,7 +13,7 @@ public class BasicUserParser implements XmlParser<BasicUser> {
         user.firstName = element.getChildText("first-name");
         user.lastName = element.getChildText("last-name");
         user.email = element.getChildText("email");
-        user.enonicUsername = element.getChildText("name");
+        user.enonicUserName = element.getChildText("name");
         user.lastModified = localDateFormatter.apply(element.getChildText("last-modified"));
         return user;
     }

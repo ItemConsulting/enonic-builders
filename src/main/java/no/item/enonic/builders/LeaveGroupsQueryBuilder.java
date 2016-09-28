@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 /*
-* TODO Support both versions of ids, both #123412341234, and store:username
+* TODO Support both versions of ids, both #123412341234, and store:memberId
 * */
 public class LeaveGroupsQueryBuilder {
     private final Logger logger = LoggerFactory.getLogger(LeaveGroupsQueryBuilder.class);

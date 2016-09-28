@@ -17,6 +17,6 @@ public class User extends BasicUser {
     public String email;
     public String city; //PostOffice
     public LocalDate birthday;
-    public String username;
+    public String memberId;
     public String phonePrivate;
 }
